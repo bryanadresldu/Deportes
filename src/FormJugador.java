@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class FormJugador {
+public class FormJugador extends JFrame{
     private JTextField textField1;
     private JTextField textField2;
     private JTextField textField3;
@@ -10,4 +10,14 @@ public class FormJugador {
     private JButton mostrarButton;
     private JButton limpiarButton;
     private JTable table1;
+    private JPanel panelJugador;
+
+    public  FormJugador(){
+        setTitle("Administrador");
+        setContentPane(panelJugador);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setSize(400,200);
+        setLocationRelativeTo(null);
+        setVisible(true);
+    }
 }
